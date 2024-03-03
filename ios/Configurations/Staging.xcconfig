@@ -1,0 +1,2 @@
+PRODUCT_BUNDLE_IDENTIFIER=com.iai.ios.staging
+INFOPLIST_KEY_CFBundleDisplayName=iai staging
