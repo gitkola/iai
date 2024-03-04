@@ -4,9 +4,7 @@ import {SafeAreaView, StyleSheet, Text} from 'react-native';
 function App(): React.JSX.Element {
   return (
     <SafeAreaView style={[styles.container]}>
-      <Text style={[styles.highlight]}>
-        {__DEV__ ? 'Debug mode' : 'Release mode'}
-      </Text>
+      <Text style={[styles.highlight]}>{__DEV__ ? 'DEBUG' : 'RELEASE'}</Text>
     </SafeAreaView>
   );
 }
