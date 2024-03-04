@@ -6,7 +6,7 @@
     "android": "react-native run-android --mode developmentDebug",
     "ios": "react-native run-ios --scheme developmentDebug",
     "build:android": "cd android && ./gradlew assembleStagingRelease",
-    "build:ios": "cd ios && xcodebuild -workspace iai.xcworkspace -scheme stagingRelease build -derivedDataPath ./build",
+    "build:ios": "cd ios && xcodebuild -workspace iai.xcworkspace -scheme stagingRelease ONLY_ACTIVE_ARCH=NO build -derivedDataPath ./build",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
