@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C80B921A6F3F58F76C31292 /* libPods-iai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-iai.a */; };
+		11A36AD5A04A4BEB4F4946A8 /* libPods-iai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 372CB9105C9790C5C7FB672B /* libPods-iai.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -15,29 +15,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01CF96602B93F89B002113CB /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		01CF96612B93F8A7002113CB /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
-		01CF96622B93F8B3002113CB /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		01CF966B2B93FC7E002113CB /* iaiDebug.Development.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiDebug.Development.entitlements; path = iai/iaiDebug.Development.entitlements; sourceTree = "<group>"; };
-		01CF966C2B93FC88002113CB /* iaiDebug.Staging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiDebug.Staging.entitlements; path = iai/iaiDebug.Staging.entitlements; sourceTree = "<group>"; };
-		01CF966D2B93FC94002113CB /* iaiDebug.Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiDebug.Production.entitlements; path = iai/iaiDebug.Production.entitlements; sourceTree = "<group>"; };
-		01CF966E2B93FC9E002113CB /* iaiRelease.Development.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiRelease.Development.entitlements; path = iai/iaiRelease.Development.entitlements; sourceTree = "<group>"; };
-		01CF966F2B93FCA4002113CB /* iaiRelease.Staging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiRelease.Staging.entitlements; path = iai/iaiRelease.Staging.entitlements; sourceTree = "<group>"; };
-		01CF96702B93FCA9002113CB /* iaiRelease.Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiRelease.Production.entitlements; path = iai/iaiRelease.Production.entitlements; sourceTree = "<group>"; };
-		106F5EEE40855734C77AE702 /* Pods-iai.release.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.release.development.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.release.development.xcconfig"; sourceTree = "<group>"; };
+		0117627F2B95BE870054AF6A /* iaidevelopmentDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaidevelopmentDebug.entitlements; path = iai/iaidevelopmentDebug.entitlements; sourceTree = "<group>"; };
+		011762802B95BE8E0054AF6A /* iaistagingDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaistagingDebug.entitlements; path = iai/iaistagingDebug.entitlements; sourceTree = "<group>"; };
+		011762812B95BE930054AF6A /* iaiproductionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiproductionDebug.entitlements; path = iai/iaiproductionDebug.entitlements; sourceTree = "<group>"; };
+		011762822B95BE970054AF6A /* iaidevelopmentRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaidevelopmentRelease.entitlements; path = iai/iaidevelopmentRelease.entitlements; sourceTree = "<group>"; };
+		011762832B95BE9B0054AF6A /* iaistagingRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaistagingRelease.entitlements; path = iai/iaistagingRelease.entitlements; sourceTree = "<group>"; };
+		011762842B95BEA00054AF6A /* iaiproductionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iaiproductionRelease.entitlements; path = iai/iaiproductionRelease.entitlements; sourceTree = "<group>"; };
+		0136392C2B95997D0074E441 /* developmentDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = developmentDebug.xcconfig; sourceTree = "<group>"; };
+		0136392D2B9599950074E441 /* stagingDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = stagingDebug.xcconfig; sourceTree = "<group>"; };
+		0136392E2B9599AB0074E441 /* productionDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = productionDebug.xcconfig; sourceTree = "<group>"; };
+		01CF96602B93F89B002113CB /* developmentRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = developmentRelease.xcconfig; sourceTree = "<group>"; };
+		01CF96612B93F8A7002113CB /* stagingRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = stagingRelease.xcconfig; sourceTree = "<group>"; };
+		01CF96622B93F8B3002113CB /* productionRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = productionRelease.xcconfig; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* iai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iai/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = iai/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = iai/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iai/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iai/main.m; sourceTree = "<group>"; };
-		2ED1E21D4D1317FBB066119D /* Pods-iai.debug.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.debug.development.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.debug.development.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-iai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		372CB9105C9790C5C7FB672B /* libPods-iai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF92B6ACCC6E5057F1464DD /* Pods-iai.productionrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.productionrelease.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.productionrelease.xcconfig"; sourceTree = "<group>"; };
+		4851FE344B32759AF29B7891 /* Pods-iai.productiondebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.productiondebug.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.productiondebug.xcconfig"; sourceTree = "<group>"; };
+		74F5469A5E7A150688A9DD43 /* Pods-iai.stagingdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.stagingdebug.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.stagingdebug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = iai/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89014E260BAD174145B4808B /* Pods-iai.debug.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.debug.production.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.debug.production.xcconfig"; sourceTree = "<group>"; };
-		C901B9E65115E10B3ADB13B7 /* Pods-iai.release.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.release.production.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.release.production.xcconfig"; sourceTree = "<group>"; };
-		DA2103D12948EF5B02462D8D /* Pods-iai.release.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.release.staging.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.release.staging.xcconfig"; sourceTree = "<group>"; };
-		DE0D22279E01D2511D6D125A /* Pods-iai.debug.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.debug.staging.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.debug.staging.xcconfig"; sourceTree = "<group>"; };
+		8E67899AD64A325798F14D9B /* Pods-iai.stagingrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.stagingrelease.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.stagingrelease.xcconfig"; sourceTree = "<group>"; };
+		BC3C6C4393A21DCBF01069D2 /* Pods-iai.developmentrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.developmentrelease.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.developmentrelease.xcconfig"; sourceTree = "<group>"; };
+		EA6CE45B8587706A5E81B841 /* Pods-iai.developmentdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iai.developmentdebug.xcconfig"; path = "Target Support Files/Pods-iai/Pods-iai.developmentdebug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -46,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-iai.a in Frameworks */,
+				11A36AD5A04A4BEB4F4946A8 /* libPods-iai.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +59,12 @@
 		01CF965F2B93F87D002113CB /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				01CF96602B93F89B002113CB /* Development.xcconfig */,
-				01CF96612B93F8A7002113CB /* Staging.xcconfig */,
-				01CF96622B93F8B3002113CB /* Production.xcconfig */,
+				0136392C2B95997D0074E441 /* developmentDebug.xcconfig */,
+				01CF96602B93F89B002113CB /* developmentRelease.xcconfig */,
+				0136392E2B9599AB0074E441 /* productionDebug.xcconfig */,
+				01CF96622B93F8B3002113CB /* productionRelease.xcconfig */,
+				0136392D2B9599950074E441 /* stagingDebug.xcconfig */,
+				01CF96612B93F8A7002113CB /* stagingRelease.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -66,12 +72,12 @@
 		13B07FAE1A68108700A75B9A /* iai */ = {
 			isa = PBXGroup;
 			children = (
-				01CF96702B93FCA9002113CB /* iaiRelease.Production.entitlements */,
-				01CF966F2B93FCA4002113CB /* iaiRelease.Staging.entitlements */,
-				01CF966E2B93FC9E002113CB /* iaiRelease.Development.entitlements */,
-				01CF966D2B93FC94002113CB /* iaiDebug.Production.entitlements */,
-				01CF966C2B93FC88002113CB /* iaiDebug.Staging.entitlements */,
-				01CF966B2B93FC7E002113CB /* iaiDebug.Development.entitlements */,
+				011762842B95BEA00054AF6A /* iaiproductionRelease.entitlements */,
+				011762832B95BE9B0054AF6A /* iaistagingRelease.entitlements */,
+				011762822B95BE970054AF6A /* iaidevelopmentRelease.entitlements */,
+				011762812B95BE930054AF6A /* iaiproductionDebug.entitlements */,
+				011762802B95BE8E0054AF6A /* iaistagingDebug.entitlements */,
+				0117627F2B95BE870054AF6A /* iaidevelopmentDebug.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -86,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-iai.a */,
+				372CB9105C9790C5C7FB672B /* libPods-iai.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,12 +130,12 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2ED1E21D4D1317FBB066119D /* Pods-iai.debug.development.xcconfig */,
-				DE0D22279E01D2511D6D125A /* Pods-iai.debug.staging.xcconfig */,
-				89014E260BAD174145B4808B /* Pods-iai.debug.production.xcconfig */,
-				106F5EEE40855734C77AE702 /* Pods-iai.release.development.xcconfig */,
-				DA2103D12948EF5B02462D8D /* Pods-iai.release.staging.xcconfig */,
-				C901B9E65115E10B3ADB13B7 /* Pods-iai.release.production.xcconfig */,
+				EA6CE45B8587706A5E81B841 /* Pods-iai.developmentdebug.xcconfig */,
+				74F5469A5E7A150688A9DD43 /* Pods-iai.stagingdebug.xcconfig */,
+				4851FE344B32759AF29B7891 /* Pods-iai.productiondebug.xcconfig */,
+				BC3C6C4393A21DCBF01069D2 /* Pods-iai.developmentrelease.xcconfig */,
+				8E67899AD64A325798F14D9B /* Pods-iai.stagingrelease.xcconfig */,
+				3FF92B6ACCC6E5057F1464DD /* Pods-iai.productionrelease.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -289,9 +295,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		01CF96632B93F92C002113CB /* Debug.Staging */ = {
+		01CF96632B93F92C002113CB /* stagingDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CF96612B93F8A7002113CB /* Staging.xcconfig */;
+			baseConfigurationReference = 0136392D2B9599950074E441 /* stagingDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -359,20 +365,23 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 			};
-			name = Debug.Staging;
+			name = stagingDebug;
 		};
-		01CF96642B93F92C002113CB /* Debug.Staging */ = {
+		01CF96642B93F92C002113CB /* stagingDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE0D22279E01D2511D6D125A /* Pods-iai.debug.staging.xcconfig */;
+			baseConfigurationReference = 74F5469A5E7A150688A9DD43 /* Pods-iai.stagingdebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = iai/iaiDebug.Staging.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iai/iaistagingDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -400,11 +409,11 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Debug.Staging;
+			name = stagingDebug;
 		};
-		01CF96652B93F931002113CB /* Debug.Production */ = {
+		01CF96652B93F931002113CB /* productionDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CF96622B93F8B3002113CB /* Production.xcconfig */;
+			baseConfigurationReference = 0136392E2B9599AB0074E441 /* productionDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -472,20 +481,23 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 			};
-			name = Debug.Production;
+			name = productionDebug;
 		};
-		01CF96662B93F931002113CB /* Debug.Production */ = {
+		01CF96662B93F931002113CB /* productionDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89014E260BAD174145B4808B /* Pods-iai.debug.production.xcconfig */;
+			baseConfigurationReference = 4851FE344B32759AF29B7891 /* Pods-iai.productiondebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = iai/iaiDebug.Production.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iai/iaiproductionDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -513,11 +525,11 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Debug.Production;
+			name = productionDebug;
 		};
-		01CF96672B93F936002113CB /* Release.Staging */ = {
+		01CF96672B93F936002113CB /* stagingRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CF96612B93F8A7002113CB /* Staging.xcconfig */;
+			baseConfigurationReference = 01CF96612B93F8A7002113CB /* stagingRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -577,21 +589,24 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release.Staging;
+			name = stagingRelease;
 		};
-		01CF96682B93F936002113CB /* Release.Staging */ = {
+		01CF96682B93F936002113CB /* stagingRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA2103D12948EF5B02462D8D /* Pods-iai.release.staging.xcconfig */;
+			baseConfigurationReference = 8E67899AD64A325798F14D9B /* Pods-iai.stagingrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = iai/iaiRelease.Staging.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iai/iaistagingRelease.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -619,11 +634,11 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Release.Staging;
+			name = stagingRelease;
 		};
-		01CF96692B93F939002113CB /* Release.Production */ = {
+		01CF96692B93F939002113CB /* productionRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CF96622B93F8B3002113CB /* Production.xcconfig */;
+			baseConfigurationReference = 01CF96622B93F8B3002113CB /* productionRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -683,21 +698,24 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release.Production;
+			name = productionRelease;
 		};
-		01CF966A2B93F939002113CB /* Release.Production */ = {
+		01CF966A2B93F939002113CB /* productionRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C901B9E65115E10B3ADB13B7 /* Pods-iai.release.production.xcconfig */;
+			baseConfigurationReference = 3FF92B6ACCC6E5057F1464DD /* Pods-iai.productionrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = iai/iaiRelease.Production.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iai/iaiproductionRelease.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E5ZDAB63A3;
@@ -723,15 +741,15 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Release.Production;
+			name = productionRelease;
 		};
-		13B07F941A680F5B00A75B9A /* Debug.Development */ = {
+		13B07F941A680F5B00A75B9A /* developmentDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ED1E21D4D1317FBB066119D /* Pods-iai.debug.development.xcconfig */;
+			baseConfigurationReference = EA6CE45B8587706A5E81B841 /* Pods-iai.developmentdebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = iai/iaiDebug.Development.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iai/iaidevelopmentDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -759,15 +777,15 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Debug.Development;
+			name = developmentDebug;
 		};
-		13B07F951A680F5B00A75B9A /* Release.Development */ = {
+		13B07F951A680F5B00A75B9A /* developmentRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 106F5EEE40855734C77AE702 /* Pods-iai.release.development.xcconfig */;
+			baseConfigurationReference = BC3C6C4393A21DCBF01069D2 /* Pods-iai.developmentrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = iai/iaiRelease.Development.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iai/iaidevelopmentRelease.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -794,11 +812,11 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Release.Development;
+			name = developmentRelease;
 		};
-		83CBBA201A601CBA00E9B192 /* Debug.Development */ = {
+		83CBBA201A601CBA00E9B192 /* developmentDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CF96602B93F89B002113CB /* Development.xcconfig */;
+			baseConfigurationReference = 0136392C2B95997D0074E441 /* developmentDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -866,16 +884,19 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 			};
-			name = Debug.Development;
+			name = developmentDebug;
 		};
-		83CBBA211A601CBA00E9B192 /* Release.Development */ = {
+		83CBBA211A601CBA00E9B192 /* developmentRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CF96602B93F89B002113CB /* Development.xcconfig */;
+			baseConfigurationReference = 01CF96602B93F89B002113CB /* developmentRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -935,13 +956,16 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release.Development;
+			name = developmentRelease;
 		};
 /* End XCBuildConfiguration section */
 
@@ -949,28 +973,28 @@
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "iai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13B07F941A680F5B00A75B9A /* Debug.Development */,
-				01CF96642B93F92C002113CB /* Debug.Staging */,
-				01CF96662B93F931002113CB /* Debug.Production */,
-				13B07F951A680F5B00A75B9A /* Release.Development */,
-				01CF96682B93F936002113CB /* Release.Staging */,
-				01CF966A2B93F939002113CB /* Release.Production */,
+				13B07F941A680F5B00A75B9A /* developmentDebug */,
+				01CF96642B93F92C002113CB /* stagingDebug */,
+				01CF96662B93F931002113CB /* productionDebug */,
+				13B07F951A680F5B00A75B9A /* developmentRelease */,
+				01CF96682B93F936002113CB /* stagingRelease */,
+				01CF966A2B93F939002113CB /* productionRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release.Development;
+			defaultConfigurationName = developmentRelease;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "iai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83CBBA201A601CBA00E9B192 /* Debug.Development */,
-				01CF96632B93F92C002113CB /* Debug.Staging */,
-				01CF96652B93F931002113CB /* Debug.Production */,
-				83CBBA211A601CBA00E9B192 /* Release.Development */,
-				01CF96672B93F936002113CB /* Release.Staging */,
-				01CF96692B93F939002113CB /* Release.Production */,
+				83CBBA201A601CBA00E9B192 /* developmentDebug */,
+				01CF96632B93F92C002113CB /* stagingDebug */,
+				01CF96652B93F931002113CB /* productionDebug */,
+				83CBBA211A601CBA00E9B192 /* developmentRelease */,
+				01CF96672B93F936002113CB /* stagingRelease */,
+				01CF96692B93F939002113CB /* productionRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release.Development;
+			defaultConfigurationName = developmentRelease;
 		};
 /* End XCConfigurationList section */
 	};
