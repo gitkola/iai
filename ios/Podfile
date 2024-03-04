@@ -9,12 +9,12 @@ platform :ios, min_ios_version_supported
 prepare_react_native_project!
 
 project 'iai',
-  'Debug.Development' => :debug,
-  'Debug.Staging' => :debug,
-  'Debug.Production' => :debug,
-  'Release.Development' => :release,
-  'Release.Staging' => :release,
-  'Release.Production' => :release
+  'developmentDebug' => :debug,
+  'stagingDebug' => :debug,
+  'productionDebug' => :debug,
+  'developmentRelease' => :release,
+  'stagingRelease' => :release,
+  'productionRelease' => :release
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil

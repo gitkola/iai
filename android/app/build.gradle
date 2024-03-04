@@ -54,7 +54,7 @@ react {
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore (JSC)
@@ -71,16 +71,17 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 
 android {
     ndkVersion rootProject.ext.ndkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
-    compileSdk rootProject.ext.compileSdkVersion
+    buildToolsVersion = rootProject.ext.buildToolsVersion
+    compileSdkVersion = rootProject.ext.compileSdkVersion
 
     namespace "com.iai"
     defaultConfig {
-        applicationId "com.iai"
+        applicationId "com.iai.android"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        manifestPlaceholders.appName = "iai"
     }
     signingConfigs {
         debug {
@@ -93,6 +94,9 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            manifestPlaceholders.buildTypeAppSuffix = " debug"
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
@@ -100,13 +104,33 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            manifestPlaceholders.buildTypeAppSuffix = ""
+        }
+    }
+
+    flavorDimensions = ["environment"]
+    productFlavors {
+        development {
+            dimension "environment"
+            applicationIdSuffix ".development"
+            manifestPlaceholders.flavorAppSuffix = " dev"
+        }
+        staging {
+            dimension "environment"
+            applicationIdSuffix ".staging"
+            manifestPlaceholders.flavorAppSuffix = " stage"
+        }
+        production {
+            dimension "environment"
+            applicationIdSuffix ".production"
+            manifestPlaceholders.flavorAppSuffix = " prod"
         }
     }
 }
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
-    implementation("com.facebook.react:react-android")
+    implementation("com.facebook.react:react-android:0.73.5")
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
