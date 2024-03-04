@@ -39,6 +39,16 @@ jobs:
         team-id: ${{ secrets.IOS_TEAM_ID }}
         workspace-path: ios/iai.xcworkspace
         scheme: stagingRelease
+        export-method: app-store
+        configuration: stagingRelease
+        output-path: output.ipa
+    # Example: Upload build artifact if build fails
+    - name: Upload iOS build artifacts on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: ios-build-artifacts
+        path: ios/artifacts
 
   android_build:
     runs-on: ubuntu-latest
@@ -71,4 +81,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: android-build-artifacts
-        path: ./artifacts
+        path: android/artifacts
