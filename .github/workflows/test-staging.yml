@@ -1,10 +1,9 @@
-name: Main Actions
+name: Test Staging
 
 on: 
-  push:
-    branches: [ main, develop ]
+
   pull_request:
-    branches: [ main, develop ]
+    branches: [ develop ]
 
 env:
   CI: true
@@ -29,15 +28,27 @@ jobs:
       run: yarn lint
     - name: Install iOS dependencies
       run: npx pod-install
-    - name: Build iOS Project
-      run: yarn build:ios
+    - name: iOS Build Action
+      uses: yukiarrr/ios-build-action@v1.11.2
+      with:
+        project-path: ios/iai.xcodeproj
+        p12-base64: ${{ secrets.IOS_P12_BASE64 }}
+        certificate-password: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+        mobileprovision-base64: ${{ secrets.PROFILE_DISTRIBUTION_IAI_STAGING_BASE64 }}
+        code-signing-identity: "Distribution"
+        team-id: ${{ secrets.IOS_TEAM_ID }}
+        workspace-path: ios/iai.xcworkspace
+        scheme: stagingRelease
+        export-method: app-store
+        configuration: stagingRelease
+        output-path: output.ipa
     # Example: Upload build artifact if build fails
     - name: Upload iOS build artifacts on failure
       if: failure()
       uses: actions/upload-artifact@v4
       with:
         name: ios-build-artifacts
-        path: ./artifacts
+        path: ios/artifacts
 
   android_build:
     runs-on: ubuntu-latest
@@ -70,4 +81,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: android-build-artifacts
-        path: ./artifacts
+        path: android/artifacts
